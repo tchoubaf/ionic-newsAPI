@@ -1,19 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-title mode=ios>
-     
-
-<ion-row>
-<ion-col ion-item col-6 >
-  <ion-icon name="time-outline" ></ion-icon>
-</ion-col>
-<ion-col ion-item col-6>
-  <ion-datetime value="{{article.publishedAt}}" display-timezone="utc"></ion-datetime>
-</ion-col>
-</ion-row>
-
-      
-      
+   <ion-row>
+      <ion-col ion-item col-6 >
+    <ion-icon name="time-outline" ></ion-icon>
+   </ion-col>
+      <ion-col ion-item col-6>
+    <ion-datetime value="{{article.publishedAt}}" display-timezone="utc"></ion-datetime>
+   </ion-col>
+  </ion-row> 
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -26,7 +21,8 @@
     </ion-card-header>
   
     <ion-card-content>
-           {{article.content}}
+          {{article.content}}
+
     </ion-card-content>
   </ion-card>
 </ion-content>
