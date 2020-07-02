@@ -18,7 +18,7 @@ export class NewsPage implements OnInit {
     this.newsService
                     .getNews('top-headlines?country=us&category=business')
                     .subscribe(data => {
-                      //console.log(data);
+                      console.log(data);
                       this.result = data;
                     });
   }
