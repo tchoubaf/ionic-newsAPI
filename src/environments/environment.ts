@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   apiUrl: 'http://newsapi.org/v2',
-  apiKey: 'f57b08ac53124fb4b1514c7c8f132b62'
+  apiKey: 'f57b08ac53124fb4b1514c7c8f132b62',
+  Cors: 'https://cors-anywhere.herokuapp.com'
 
 /*
  * For easier debugging in development mode, you can import the following file

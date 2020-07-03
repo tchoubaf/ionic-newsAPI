@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 const API_URL = environment.apiUrl;
 const API_KEY = environment.apiKey;
+const Cors_URL = environment.Cors;
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,6 @@ export class NewsService {
   constructor(private http: HttpClient) { }
 
   getNews(url: any){
-    return this.http.get(`${API_URL}/${url}&apiKey=${API_KEY}`);
+    return this.http.get(`${Cors_URL}/${API_URL}/${url}&apiKey=${API_KEY}`);
   }
 }
